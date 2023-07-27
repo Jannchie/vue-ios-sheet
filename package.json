@@ -1,0 +1,25 @@
+{
+  "name": "vue-ios-sheet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/components": "^10.2.1",
+    "@vueuse/core": "^10.2.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "typescript": "^5.0.2",
+    "unocss": "^0.53.6",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}

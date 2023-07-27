@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+.ios-sheet-wrapper {
+  @apply relative fixed inset-0 h-100vh w-full overflow-hidden transition-all duration-500 bg-black;
+}
