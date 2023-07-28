@@ -66,7 +66,7 @@ const sheetStyle = computed(() => {
         const progress = trueValue.value - idx - 1
         return {
           transform: `scale(${1 - progress * scale / 100}) translateY(${((1 - progress) * space + space)}rem)`,
-          filter: `brightness(${100 - 50 * progress}%)`,
+          filter: `brightness(${100 - 10 * progress}%)`,
           borderRadius: `${rounded}rem`,
           backgroundColor: finalSheetBgColor,
         }
@@ -76,7 +76,7 @@ const sheetStyle = computed(() => {
       const progress = trueValue.value - idx - 1
       return {
         transform: `translateY(${space + space * (1 - progress)}rem) scale(${1 - progress * scale / 100})`,
-        filter: `brightness(${100 - 50 * progress}%)`,
+        filter: `brightness(${100 - 10 * progress}%)`,
         borderRadius: `${rounded}rem`,
         backgroundColor: finalSheetBgColor,
       }
@@ -97,7 +97,7 @@ const onLeave: any = (el: HTMLElement, done: () => void) => {
     if (idx === currentValue.value - 1) {
       const progress = trueValue.value - idx - 1
       el.style.transform = `scale(${1 - progress * scale / 100})`
-      el.style.filter = `brightness(${100 - 50 * progress}%)`
+      el.style.filter = `brightness(${100 - 10 * progress}%)`
     }
     requestAnimationFrame(cb)
   }
@@ -216,7 +216,7 @@ const baseWrapperStyle = computed(() => {
   if (progress >= 0) {
     return {
       transform: `translateY(calc(${space * progress}rem)) scale(${1 - progress * scale / 100})`,
-      filter: `brightness(${100 - 50 * progress}%)`,
+      filter: `brightness(${100 - 10 * (progress)}%)`,
       borderRadius: `${0.5 * progress}rem`,
       backgroundColor: baseBGInterpolate(progress),
     }

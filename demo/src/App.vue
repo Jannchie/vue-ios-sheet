@@ -6,7 +6,7 @@ import Sheet1 from './Sheet1.vue'
 
 <template>
   <SheetWrapper>
-    <div class="p-4 text-center @dark:bg-black bg-white min-h-[100vh]">
+    <div class="p-4 text-center @light:bg-white min-h-[100vh]">
       <div class="mb-2 text-4xl font-bold">
         Vue iOS Sheet
       </div>
