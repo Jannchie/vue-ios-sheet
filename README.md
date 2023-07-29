@@ -1,6 +1,8 @@
 # Vue iOS Sheet
 
-![Example](public/example.gif)
+<p align="center" style="overflow: hidden; border-radius:">
+  <img src="public/example.gif">
+</p>
 
 ## Install
 
