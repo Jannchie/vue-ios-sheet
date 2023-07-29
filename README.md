@@ -1,5 +1,7 @@
 # Vue iOS Sheet
 
+![Example](public/example.gif)
+
 ## Install
 
 ```bash
