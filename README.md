@@ -14,7 +14,7 @@ pnpm install vue-ios-sheet
 
 ```vue
 <script setup>
-import { SheetWrapper, pushSheet } from '../../dist'
+import { SheetWrapper, pushSheet } from 'vue-ios-sheet'
 import Sheet from './Sheet.vue'
 </script>
 
