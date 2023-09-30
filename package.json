@@ -1,42 +1,43 @@
 {
   "name": "vue-ios-sheet",
-  "version": "0.1.1",
   "type": "module",
+  "version": "0.1.1",
+  "license": "MIT",
   "exports": "./dist/index.js",
-  "files": [
-    "dist"
-  ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "cd demo && vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "build-demo": "cd demo && vite build",
-    "preview-demo": "cd demo && vite preview"
+    "preview-demo": "cd demo && vite preview",
+    "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
   },
-  "resolutions": {
-    "vue": "^3.0.0"
-  },
   "dependencies": {
-    "@vueuse/components": "^10.2.1",
-    "@vueuse/core": "^10.2.1",
+    "@vueuse/components": "^10.4.1",
+    "@vueuse/core": "^10.4.1",
     "d3-interpolate": "^3.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
-    "@types/d3-interpolate": "^3.0.1",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "typescript": "^5.0.2",
-    "unocss": "^0.53.6",
-    "vite": "^4.4.5",
-    "vite-plugin-dts": "^3.3.1",
-    "vue-tsc": "^1.8.5"
+    "@antfu/eslint-config": "1.0.0-beta.17",
+    "@types/d3-interpolate": "^3.0.2",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "typescript": "^5.2.2",
+    "unocss": "^0.56.4",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.6.0",
+    "vue-tsc": "^1.8.15"
   },
-  "license": "MIT"
+  "resolutions": {
+    "vue": "^3.0.0"
+  }
 }
